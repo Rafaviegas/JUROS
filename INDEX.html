@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CALCULADORA DE JUROS</title>
+</head>
+
+<style>
+
+
+    button{
+        font-size: x-large;
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+        border: 3px solid rgba(43, 42, 42, 0.685);
+        background-color: aliceblue;
+    }
+
+    input{
+        padding: 25px 5px;
+        width: 250px;
+        font-size: xx-large;
+        text-align: center;
+        border-radius: 1cm;
+        border: 3px solid rgba(43, 42, 42, 0.685);
+        background-color: aliceblue;
+
+    }
+
+    body{
+        display: grid;
+        background-color: rgba(51, 119, 51, 0.459);
+        place-items: center;
+        height: 100vh;
+    }
+    
+    ::placeholder{
+        font-size: 19px;
+        color: black;
+    }
+
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0; 
+}
+
+
+</style>
+
+<body>
+    
+
+   <div>  
+        <input id="valor" type="number" placeholder="VALOR">
+        <button onclick="">✔️</button>
+
+   </div>
+
+</body>
+<script> 
+    
+    var valores = [
+        {valor : document.getElementById('valor')},
+        {two :  valor * 1.0444},
+        {three :  valor * 1.0505},
+        {four : valor * 1.0566},
+        {five : valor * 1.0626},
+        {six : valor * 1.0685},
+        {seven : valor * 1.0801},
+        {eigth : valor * 1.0859},
+        {nine : valor * 1.0917},
+        {ten : valor * 1.0974},
+        {eleven : valor * 1.1031},
+        {twelve : valor * 1.1087},
+    ]
+
+
+</script>
+</html>
